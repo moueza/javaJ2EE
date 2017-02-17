@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <servlet>
+    <servlet-name>Formulaire</servlet-name>
+    <servlet-class>servlets.Formulairee</servlet-class>
+    <init-param>
+      <param-name>Auteur</param-name>
+      <param-value>MOUEZA</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Formulaire</servlet-name>
+    <url-pattern>/formulaire</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Resultat</servlet-name>
+    <servlet-class>servlets.Resultat</servlet-class>
+    <init-param>
+      <param-name>Auteur</param-name>
+      <param-value>MOUEZA</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Resultat</servlet-name>
+    <url-pattern>/resultat</url-pattern>
+  </servlet-mapping>
+</web-app>
