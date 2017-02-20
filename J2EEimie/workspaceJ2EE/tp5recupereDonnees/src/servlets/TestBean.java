@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import beans.Bean;
+import beans.UtilisateurBean;
 
 /**
  * Servlet implementation class TestBean
@@ -15,31 +15,39 @@ import beans.Bean;
 @WebServlet("/TestBean")
 public class TestBean extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public TestBean() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	//	response.getWriter().append("Served at: ").append(request.getContextPath());
-	Bean utilisateur = new Bean();
-	utilisateur.setNom("DELP");	
-	utilisateur.setPrenom("Jean");
-	utilisateur.setAnnNaissance(1990);
+	public TestBean() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String message = ("je suis 1 mesg");
+		request.setAttribute("messageEnvoye", message);
+
+		UtilisateurBean utilisateur = new UtilisateurBean();
+		utilisateur.setNom("DELP");
+		utilisateur.setPrenom("Jean");
+		utilisateur.setAnnNaissance(1990);
+
+		request.setAttribute("beanUtilisateur", utilisateur);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/testBean.jsp?parametre=toto").forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}

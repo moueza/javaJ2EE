@@ -13,6 +13,11 @@
     <servlet-name>Formulaire</servlet-name>
     <url-pattern>/formulaire</url-pattern>
   </servlet-mapping>
+  
+  
+  
+  
+  
   <servlet>
     <servlet-name>Resultat</servlet-name>
     <servlet-class>servlets.Resultat</servlet-class>
@@ -26,4 +31,44 @@
     <servlet-name>Resultat</servlet-name>
     <url-pattern>/resultat</url-pattern>
   </servlet-mapping>
+  
+  
+  
+  
+  
+    <servlet>
+    <servlet-name>TestBean</servlet-name>
+    <servlet-class>servlets.TestBean</servlet-class>
+    <init-param>
+      <param-name>Auteur</param-name>
+      <param-value>MOUEZA</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestBean</servlet-name>
+    <url-pattern>/testbean</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+    <servlet>
+    <servlet-name>Formulairee4</servlet-name>
+    <servlet-class>servlets.Formulairee4</servlet-class>
+    <init-param>
+      <param-name>Auteur</param-name>
+      <param-value>MOUEZA</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Formulairee4</servlet-name>
+    <url-pattern>/formulairee4</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

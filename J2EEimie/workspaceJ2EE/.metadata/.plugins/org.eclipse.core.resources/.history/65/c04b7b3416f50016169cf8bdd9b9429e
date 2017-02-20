@@ -1,0 +1,11 @@
+package metier;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class InscriptionForm {
+	public void inscrireUtilisateur(HttpServletRequest request, HttpServletResponse response) {
+		String nom=request.getParameter("nom"); //setAttribute("message envoy", message);
+		request.setAttribute("messagee", nom);
+	}
+}

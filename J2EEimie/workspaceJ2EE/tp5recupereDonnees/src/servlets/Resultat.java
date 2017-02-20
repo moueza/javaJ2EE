@@ -7,10 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class Resultat
- */
-@WebServlet("/Resultat")
+
 public class Resultat extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,9 +26,15 @@ public class Resultat extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		String message = new String("Nom ms mess");
-		request.setAttribute("message envoy", message);
-		this.getServletContext().getRequestDispatcher("/WEB-INF/formulaire.jsp").forward(request, response);
-
+		String prenom = request.getParameter("nom");
+		
+		//request.setAttribute("message envoy", message);
+		String nom=request.getParameter("nom"); //setAttribute("message envoy", message);
+		request.setAttribute("messagee", nom);
+		
+		
+		this.getServletContext().getRequestDispatcher("/WEB-INF/resultat.jsp").forward(request, response);
+	
 	}
 
 	/**

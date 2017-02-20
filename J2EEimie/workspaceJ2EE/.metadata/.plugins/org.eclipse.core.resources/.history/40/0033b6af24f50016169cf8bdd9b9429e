@@ -1,0 +1,60 @@
+package metier;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class InscriptionForm {
+	private static InscriptionForm instance;
+	private String resultatTraitement;
+
+	public static void setInstance(InscriptionForm instance) {
+		InscriptionForm.instance = instance;
+	}
+
+	public static InscriptionForm getInstance() {
+		if (instance == null)
+			instance = new InscriptionForm();
+		return instance;
+	}
+
+	private InscriptionForm() {
+
+	}
+
+	public String inscrireUtilisateur(HttpServletRequest requestt, HttpServletResponse responsee) {
+		// String nomm = requestt.getParameter("nom"); // setAttribute("message
+		/*
+		 * String mail = requestt.getParameter("mail"); // setAttribute("message
+		 * String mdp1 = requestt.getParameter("mdp1"); // setAttribute("message
+		 * String mdp2 = requestt.getParameter("mdp2"); // setAttribute("message
+		 */
+
+		System.out.println("InscriptionForm getParam nom=" + requestt.getParameter("nom"));// envoy",
+																							// message);
+
+		System.out.println("InscriptionForm getParam mdp1=" + requestt.getParameter("mdp1"));// envoy",
+																								// message);
+		// switch (this.resultatTraitement) {
+		// case "OK":
+		// this.setResultatTraitement(resultatTraitement);
+		// break;
+		// case "KO mdp":
+
+		if (requestt.getParameter("mdp1").equals(requestt.getParameter("mdp2"))) {
+			System.out.println("InscriptionForm : 2 mdp =");
+			this.setResultatTraitement("OK");
+		} else {
+			System.out.println("InscriptionForm : 2 mdp !=");
+			this.setResultatTraitement("KO mdp !=");
+		}
+	}
+
+}
+
+	public String getResultatTraitement() {
+		return resultatTraitement;
+	}
+
+	public void setResultatTraitement(String resultatTraitement) {
+		this.resultatTraitement = resultatTraitement;
+	}

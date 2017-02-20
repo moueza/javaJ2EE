@@ -1,0 +1,34 @@
+package metier;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class InscriptionForm {
+	private static InscriptionForm instance;
+
+	public static InscriptionForm getInstance() {
+		if (instance == null)
+			instance = new InscriptionForm();
+		return instance;
+	}
+
+	private InscriptionForm() {
+
+	}
+
+	public void inscrireUtilisateur(HttpServletRequest request, HttpServletResponse response) {
+		String nom = request.getParameter("nom"); // setAttribute("message
+		
+		
+		System.out.println("InscriptionForm ");// envoy", message);
+		if(request.getAttribute("mdp1").equals(request.getAttribute("mdp2"))){
+			System.out.println("InscriptionForm : 2 mdp =");
+		}else{
+			System.out.println("InscriptionForm : 2 mdp =");
+			
+		}
+		}
+		
+		
+	}
+}

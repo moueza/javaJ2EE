@@ -1,0 +1,41 @@
+package metier;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class InscriptionForm {
+	private static InscriptionForm instance;
+private String messageErreur;
+	public static InscriptionForm getInstance() {
+		if (instance == null)
+			instance = new InscriptionForm();
+		return instance;
+	}
+
+	private InscriptionForm() {
+
+	}
+
+	public String inscrireUtilisateur(HttpServletRequest requestt, HttpServletResponse responsee) {
+		// String nomm = requestt.getParameter("nom"); // setAttribute("message
+		/*
+		 * String mail = requestt.getParameter("mail"); // setAttribute("message
+		 * String mdp1 = requestt.getParameter("mdp1"); // setAttribute("message
+		 * String mdp2 = requestt.getParameter("mdp2"); // setAttribute("message
+		 */
+
+		System.out.println("InscriptionForm getParam nom=" + requestt.getParameter("nom"));// envoy",
+																							// message);
+
+		System.out.println("InscriptionForm getParam mdp1=" + requestt.getParameter("mdp1"));// envoy",
+																								// message);
+
+		if (requestt.getParameter("mdp1").equals(requestt.getParameter("mdp2"))) {
+			System.out.println("InscriptionForm : 2 mdp =");
+			return "OK";
+		} else {
+			System.out.println("InscriptionForm : 2 mdp !=");
+			return "KO mdp !=";
+		}
+	}
+}
