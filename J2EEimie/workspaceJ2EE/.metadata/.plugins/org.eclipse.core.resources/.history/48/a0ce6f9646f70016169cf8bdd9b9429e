@@ -1,0 +1,7 @@
+package modele;
+
+public class Message {
+	String nom;
+	String message;
+	Date date;
+}

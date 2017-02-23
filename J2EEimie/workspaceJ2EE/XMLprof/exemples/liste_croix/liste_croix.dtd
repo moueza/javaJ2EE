@@ -1,0 +1,3 @@
+<!ENTITY croix_simple "&#8224;" >
+<!ENTITY croix_double "&#8225;" >
+<!ELEMENT texte (#PCDATA)> 

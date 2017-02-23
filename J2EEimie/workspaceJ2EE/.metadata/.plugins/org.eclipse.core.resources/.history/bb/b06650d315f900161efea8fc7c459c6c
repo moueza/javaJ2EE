@@ -1,0 +1,7 @@
+package myPack;
+
+public class Classe {
+	String name;
+	String prenomm;
+
+}

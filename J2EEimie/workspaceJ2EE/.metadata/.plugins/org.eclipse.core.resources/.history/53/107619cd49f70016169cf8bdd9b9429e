@@ -1,0 +1,24 @@
+package services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import modele.Message;
+
+public class ChatServices {
+	private static ChatServices instance;
+
+	List<Message> listOfMessages = new ArrayList<Message>();
+
+	public ChatServices getInstance() {
+		if (instance == null)
+			return new ChatServices();
+		return instance;
+	}
+
+	public void insertMessage(Message m) {
+		this.listOfMessages.add(m);
+
+	}
+
+}

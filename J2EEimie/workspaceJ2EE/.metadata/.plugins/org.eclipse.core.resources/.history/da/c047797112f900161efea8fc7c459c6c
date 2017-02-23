@@ -1,0 +1,15 @@
+package myPack;
+
+import com.google.gson.Gson;
+
+public class Main {
+	String nom;
+
+	public static void main(String[] args) {
+		Main main = new Main();
+
+		// https://sites.google.com/site/gson/gson-user-guide#TOC-Primitives-Examples
+		Gson gson = new Gson();
+		String json = gson.toJson(main);
+	}
+}

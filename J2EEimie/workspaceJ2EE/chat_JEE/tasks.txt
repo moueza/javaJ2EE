@@ -1,0 +1,4 @@
+m1 redirection si mot grossier
+m2 erreur rouge si mot grossier
+m3 BDD
+T1 choisir chatroom

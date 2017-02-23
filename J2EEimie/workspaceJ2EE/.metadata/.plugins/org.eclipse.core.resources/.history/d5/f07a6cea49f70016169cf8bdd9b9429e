@@ -1,0 +1,14 @@
+package myPack;
+
+import modele.Message;
+import services.ChatServices;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Message msg = new Message("MOUEZA","c est mon message");
+		ChatServices.class
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package modele;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ChatRoom {
+	/**TODO mettre dans classe Entite */
+	List<Message> listOfMessages = new ArrayList<Message>();
+
+}

@@ -1,0 +1,8 @@
+produits { font-family: Verdana, sans-serif; font-size: 12pt; 
+	line-height: 1.2; }
+articles { display: block; background-color: silver; margin: 10px; 
+	padding: 8px; width: 400px; }
+nom { display: block; background-color: white; border-style: solid; 
+		border-width: 1px; width: 300px; }
+fabricant { display: block; font-style: italic; }
+num, prix { color: red; }

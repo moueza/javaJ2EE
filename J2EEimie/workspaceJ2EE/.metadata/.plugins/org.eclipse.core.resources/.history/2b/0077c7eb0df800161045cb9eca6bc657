@@ -1,0 +1,94 @@
+package vue;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import modele.ChatRoom;
+import modele.Message;
+
+public class Resultat extends HttpServlet {
+	public Resultat() {
+		System.out.println("in Resultat");
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		// response.getWriter().append("Served at:
+		// ").append(request.getContextPath());
+
+		this.getServletContext().getRequestDispatcher("/WEB-INF/formulaire.jsp").forward(request, response);
+
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		System.out.println("Resultat.java doPost");
+		// doGet(request, response);
+		// doGet(request, response);
+		// String message = "messag";
+
+		/*
+		 * System.out.println("in doPost"); String nom =
+		 * request.getParameter("nom"); String mail =
+		 * request.getParameter("mail"); //System.out.println("parameter nom=" +
+		 * nom); String mdp1 = request.getParameter("mdp1"); String mdp2 =
+		 * request.getParameter("mdp2");
+		 * 
+		 * // request.setAttribute("message envoy", message); //
+		 * request.setAttribute("messagee", nom);
+		 * 
+		 * 
+		 * request.setAttribute("nom", nom); request.setAttribute("mail", mail);
+		 * request.setAttribute("mdp1", mdp1); request.setAttribute("mdp2",
+		 * mdp2);
+		 */
+		// System.out.println("Inscription :"+request.getAttribute("nom"));
+		System.out.println("Resultat :" + request.getParameter("nom"));
+		// String resultatTraitement =
+		// InscriptionForm.getInstance().inscrireUtilisateur(request, response);
+		// System.out.println("Inscription.java resultatTraitement" +
+		// resultatTraitement);
+
+		// switch (resultatTraitement) {
+		// case "OK":
+		// this.getServletContext().getRequestDispatcher("/WEB-INF/inscription.jsp").forward(request,
+		// response);
+		// break;
+		// case "KO mdp":
+
+		// ChatRoom.getInstance().getListOfMessages())
+		String nom = request.getParameter("nom");
+		String message = request.getParameter("message");
+		Message m = new Message(nom, message);
+		ChatRoom.getInstance().addMessage(m);
+		// request.setAttribute("list",
+		// ChatRoom.getInstance().getListOfMessages());
+		System.out.println("Resultat.java res=" + (ChatRoom.getInstance().getListOfMessages().get(0)).getMessage());
+		request.setAttribute("chatRoom", ChatRoom.getInstance());
+
+		HttpSession session = request.getSession();
+
+		if (session.getAttribute("login") != null) {
+			System.out.println("Resultat.java : login not null");
+			this.getServletContext().getRequestDispatcher("/WEB-INF/resultat.jsp").forward(request, response);
+		} else {
+			System.out.println("Resultat.java : redirection login");
+			this.getServletContext().getRequestDispatcher("/login").forward(request, response);
+		}
+
+	}
+}

@@ -1,0 +1,13 @@
+package metier;
+
+import beans.Chat;
+
+public class LoginService implements ILoginService{
+
+	@Override
+	public boolean isGoodLogin() {
+		Chat.getInstance().getLesUtilisateurs().;
+		return false;
+	}
+
+}

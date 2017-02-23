@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="hotels.xsd">
+
+<hotel nom="Au lion d'or" categorie="IV">
+  hôtel situé en lisière de forêt, 150 lits, calme et cher. 
+  </hotel>
+	<hotel nom="Arabesque" categorie="II" chambre_double="oui" chambre_simple="oui">
+  hôtel en ville simple, 400 chambres, satisfaisant, sans confort particulier. 
+  </hotel>
+	<hotel nom="Lancelot" categorie="III" chambre_simple="non"> 
+  hôtel situé dans le centre, 100 lits, agréable, facilement accessible. 
+  </hotel>
+</hotels>

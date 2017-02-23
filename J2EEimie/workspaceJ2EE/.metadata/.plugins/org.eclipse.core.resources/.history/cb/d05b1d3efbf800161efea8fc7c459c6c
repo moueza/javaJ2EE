@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.ais.fr"
+	targetNamespace="http://www.ais.fr" elementFormDefault="qualified">
+	<xs:element name="bibliotheque" type="typeBibliotheque" />
+
+
+	<xs:complexType name="typeBibliotheque">
+		<xs:sequence>
+			<xs:element name="ouvrage" type="typeOuvrage" minOccurs="0"
+				maxOccurs="unbounded" />
+
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+
+
+	<xs:complexType name="typeOuvrage">
+		<xs:sequence>
+			<xs:element name="type" type="typeOuvrage" minOccurs="0"
+				maxOccurs="unbounded">
+				<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[A-Z]([a-z])+" />
+			</xs:restriction>
+		</xs:simpleType>
+		</xs:element>
+
+			<xs:element name="nom" type="typeOuvrage" minOccurs="0"
+				maxOccurs="unbounded" />
+
+
+			<xs:element name="IBN" type="typeOuvrage" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="location">
+		<xs:sequence>
+			<xs:element name="meuble" type="xs:string" minOccurs="1"
+				maxOccurs="unbounded" />
+			<xs:element name="etagere" type="xs:string" minOccurs="1"
+				maxOccurs="unbounded" />
+
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+
+
+
+
+
+
+
+	<xs:element name="type">
+		
+	</xs:element>
+
+</xs:schema>

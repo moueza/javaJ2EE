@@ -1,0 +1,29 @@
+
+public class Scratch {
+
+
+	<p>Page resultat</p>
+	<div>
+		<!--  jsp:include page=formulaire.jsp-->
+	</div>
+
+	<div>
+		
+		<table>
+			<tr>
+				<th>Nom</th>
+				<th>Date</th>
+				<th>Mess</th>
+			</tr>
+
+			<c:forEach var="mesg" items="${chatRoom.getListOfMessages()} ">
+				<tr>
+					<td><c:out value="${mesg.getNom()}" /></td>
+					<td><c:out value="${{mesg.getDate()}" /></td>
+					<td><c:out value="${mesg.getMessage();}" /></td>
+				</tr>
+			</c:forEach>
+
+		</table>
+	</div>
+}

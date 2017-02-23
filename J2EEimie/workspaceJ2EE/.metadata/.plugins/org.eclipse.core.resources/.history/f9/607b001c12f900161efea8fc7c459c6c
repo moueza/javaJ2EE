@@ -1,0 +1,16 @@
+package myPack;
+
+import com.google.gson.Gson;
+
+public class Main {
+String nom; 
+public static void main(String[] args) {
+	Main main = new Main();
+	
+	
+
+	Gson gson = new Gson();
+	String json = gson.toJson(main);  
+}
+}
+

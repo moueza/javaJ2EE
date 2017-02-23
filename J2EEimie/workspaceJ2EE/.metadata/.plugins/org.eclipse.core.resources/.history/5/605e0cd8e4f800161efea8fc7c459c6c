@@ -1,0 +1,7 @@
+package myPack;
+
+public class Logg {
+	public static void main(String[] args) {
+
+	}
+}

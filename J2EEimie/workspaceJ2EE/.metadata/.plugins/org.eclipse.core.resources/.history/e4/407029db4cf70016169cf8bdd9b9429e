@@ -1,0 +1,36 @@
+package modele;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import services.ChatServices;
+
+public class ChatRoom {
+	private static ChatRoom instance;
+
+	/** TODO mettre dans classe Entite */
+	List<Message> listOfMessages = new ArrayList<Message>();
+
+	public static ChatRoom getInstance() {
+		if (instance == null)
+			return instance;
+		return instance;
+	}
+
+	public List<Message> getListOfMessages() {
+		return listOfMessages;
+	}
+
+	public void setListOfMessages(List<Message> listOfMessages) {
+		this.listOfMessages = listOfMessages;
+	}
+
+	public static void setInstance(ChatRoom instance) {
+		ChatRoom.instance = instance;
+	}
+
+	
+	public void addListOfMessages(List<Message> listOfMessages) {
+		this.listOfMessages.add(listOfMessages);
+	}
+}

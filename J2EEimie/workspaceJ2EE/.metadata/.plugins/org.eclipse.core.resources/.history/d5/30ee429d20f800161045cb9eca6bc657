@@ -1,0 +1,66 @@
+package beans;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Utilisateur {
+	
+	private String nom;
+	private String password;
+	
+	private List<Message> lesMessages;
+	
+	private String pwd;
+	
+	public String getPwd() {
+		return pwd;
+	}
+
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+
+	public Utilisateur(String nom) {
+		super();
+		this.nom = nom;
+		this.lesMessages = new ArrayList<Message>();
+	}
+
+	public Utilisateur(String nom,String passwd) {
+		super();
+		this.nom = nom;
+		this.lesMessages = new ArrayList<Message>();
+	}
+	
+	
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public List<Message> getLesMessages() {
+		return lesMessages;
+	}
+
+	public void setLesMessages(List<Message> lesMessages) {
+		this.lesMessages = lesMessages;
+	}
+	
+	public void ajoutMessage(String message, Date d){
+		
+		Message m = new Message(message, d);
+		this.lesMessages.add(m);
+	}
+
+	@Override
+	public String toString() {
+		return "Utilisateur [nom=" + nom + ", lesMessages=" + lesMessages + "]";
+	}
+	
+	
+	
+}

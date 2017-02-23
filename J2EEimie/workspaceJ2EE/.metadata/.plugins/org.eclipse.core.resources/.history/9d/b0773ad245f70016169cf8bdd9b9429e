@@ -1,0 +1,6 @@
+package services;
+
+public class ChatServices {
+	private static instance;
+public void messageToList(){}
+}

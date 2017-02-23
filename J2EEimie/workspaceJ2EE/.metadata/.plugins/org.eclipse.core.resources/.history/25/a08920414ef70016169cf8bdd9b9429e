@@ -1,0 +1,41 @@
+package services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import modele.ChatRoom;
+import modele.Message;
+
+public class ChatServices {
+	private static ChatServices instance;
+
+	private ChatServices() {
+
+	}
+
+	public static ChatServices getInstance() {
+		if (instance == null)
+			return new ChatServices();
+		return instance;
+	}
+
+	public void insertMessage(Message m) {
+		ChatRoom.getInstance().addListOfMessages(m);
+	}
+
+	public List<Message> loadMessages() {
+		// return this.listOfMessages;
+		/** TODO par DAO */
+		return ChatRoom.getInstance().getListOfMessages();
+	}
+
+	public void loadMessagesString() {
+		System.out.println("ChatService loadMessString");
+		StringBuffer mesgString = new StringBuffer();
+		for (Message m : ChatRoom.getInstance().getListOfMessages()) {
+			mesgString.append(m.toString());
+		}
+
+	}
+
+}

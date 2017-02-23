@@ -1,0 +1,9 @@
+package modele;
+
+import java.util.Date;
+
+public class Message {
+	String nom;
+	String message;
+	Date date;
+}

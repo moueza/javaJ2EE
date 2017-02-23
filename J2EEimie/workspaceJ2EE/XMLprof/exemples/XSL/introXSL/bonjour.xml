@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="bonjour.xsl"?>
+<document>
+	<question>Salut XML, es-tu ici ?</question>
+	<sortie>XML est le format de fichier du futur !</sortie>
+</document>

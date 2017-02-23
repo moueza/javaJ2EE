@@ -1,0 +1,18 @@
+package services;
+
+public class ChatServices {
+	private static ChatServices instance;
+
+
+
+	public ChatServices getInstance() {
+		if (instance == null)
+			return new ChatServices();
+		return instance;
+	}
+	
+	public List<Message> messageToList() {
+
+	}
+
+}

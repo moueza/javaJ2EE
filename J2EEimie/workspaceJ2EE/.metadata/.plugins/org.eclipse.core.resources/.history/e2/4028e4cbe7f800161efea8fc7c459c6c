@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotheque>
+	<livre>
+		<nom>Elric le necromantien</nom>
+		<serie>Elric</serie>
+		<edition>folio</edition>
+		<auteur>Mickael Moorcock</auteur>
+		<position>la</position>
+	</livre>
+	
+	<livre>
+		<nom>La communaute de l'anneau</nom>
+		<serie>Le seigneur des angeaux</serie>
+		<edition>j'ai lu</edition>
+		<auteur>J.R.R Tolkien</auteur>
+		<position>ici</position>
+	</livre>
+	
+	<livre>
+		<nom>Dune<nom>
+		<serie>Dune</serie>
+		<edition>folio jeunesse</edition>
+		<auteur>Franck Herbert</auteur>
+		<position>un poil plus a gauche</position>
+	</livre>
+	
+	<livre>
+		<nom>Etoile garde a vous</nom>
+		<serie>null</serie>
+		<edition>Folio sf</edition>
+		<auteur>Heinlein</auteur>
+		<position>a droite de Dune</position>
+	</livre>
+	
+	<livre>
+		<nom>Des milliards de tapis de cheuveux</nom>
+		<serie>null</serie>
+		<edition>Livre de poche</edition>
+		<auteur></auteur>
+		<position>T'as regard� � c�t� du machin?</position>
+	</livre>
+	
+	<livre>
+		<nom>Dracula</nom>
+		<serie>null</serie>
+		<edition>j'ai lu</edition>
+		<auteur>unknow</auteur>
+		<position>au fond</position>
+	</livre>
+	
+	<livre>
+		<nom>Le cid</nom>
+		<serie>null</serie>
+		<edition>Livre de poche</edition>
+		<auteur>Corneil</auteur>
+		<position>pas la</position>
+	</livre>
+</bibliotheque>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotheque>
+	<ouvrage>
+		<type>livre</type>
+		<nom>Les peuples du monde</nom>
+		<IBN>115146654</IBN>
+		<location>
+			<meuble>1</meuble>
+			<etagère>1</etagère>
+		</location>
+	</ouvrage>
+
+	<ouvrage>
+		<type>dictionnaire</type>
+		<nom>Larousse illustré</nom>
+		<IBN>44565445</IBN>
+		<location>
+			<meuble>2</meuble>
+			<etagère>7</etagère>
+		</location>
+	</ouvrage>
+
+	<ouvrage>
+		<type>magazine</type>
+		<nom>Programez</nom>
+		<numero>45</numero>
+		<location>
+			<meuble>6</meuble>
+			<etagère>2</etagère>
+		</location>
+	</ouvrage>
+
+	<ouvrage>
+		<type>livre</type>
+		<nom>La Bible</nom>	
+		<location>
+			<meuble>1</meuble>
+			<etagère>3</etagère>
+		</location>
+	</ouvrage>
+</bibliotheque>

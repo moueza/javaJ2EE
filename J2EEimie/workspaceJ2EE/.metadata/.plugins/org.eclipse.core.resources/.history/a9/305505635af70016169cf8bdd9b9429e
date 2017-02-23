@@ -1,0 +1,63 @@
+package modele;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+
+import vue.List;
+
+public class Message {
+	String nom;
+	String message;
+	Date date;
+
+	public Message(String nom, String message) {
+		super();
+		this.nom = nom;
+		this.message = message;
+
+		// long currentTime = System.currentTimeMillis();
+		// Date now = new Date();
+		this.date = new Date();
+
+		// this.date = now;
+
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public Date getDate() {
+		 
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public String toString() {
+		// Exo2
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy kk:mm:ss");// "dd-MM/yyyy"
+		String nowString = df.format(this.getDate());// http://stackoverflow.com/questions/6510724/how-to-convert-java-string-to-date-object
+
+		return "nom=" + this.getNom() + " date=" + nowString + " message=" + this.getMessage();
+
+	}
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<biblio>
+  <livre>
+    <titre>Les Misérables</titre>
+    <auteur>Victor Hugo</auteur>
+    <nb_tomes>3</nb_tomes>
+  </livre>
+  <livre>
+    <titre>L'Assommoir</titre>
+    <auteur>Emile Zola</auteur>
+  </livre>
+  <livre lang="en">
+    <titre>David Copperfield</titre>
+    <auteur>Charles Dickens</auteur>
+  </livre>
+</biblio> 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annuaire xmlns="http://www.ais.fr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ais.fr
+schemaAnnuaire.xsd">
+	<abonne>
+		<nom>Martin</nom>
+		<prenom>Herve</prenom>
+		<telephone type="personnel">02 41 22 11 22</telephone>
+	</abonne>
+	<abonne>
+		<nom>Durand</nom>
+		<prenom>Yves</prenom>
+		<telephone type="professionnel">02 58 58 58 57</telephone>
+	</abonne>
+	<abonne>
+		<nom>Durand</nom>
+		<prenom>Yves</prenom>
+		<telephone type="professionnel">02 58 58 58 57</telephone>
+	</abonne>
+</annuaire>

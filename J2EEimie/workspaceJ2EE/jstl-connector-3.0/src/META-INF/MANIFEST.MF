@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: 1.6.0_10 (Sun Microsystems Inc.)
+Built-By: java_re
+Build-Jdk: 1.6.0_10
+Extension-Name: jstl-connector
+Specification-Vendor: GlassFish Community
+Implementation-Vendor: GlassFish Community
+Implementation-Title: jstl-connector
+Implementation-Version: 3.0
+HK2-Import-Bundles: com.sun.enterprise:hk2, org.glassfish.common:glass
+ fish-api, org.glassfish.common:common-util
+HK2-Class-Path-Id: com.sun.enterprise:hk2:jar:1.0.0 com.sun.enterprise
+ :hk2-core:jar:1.0.0 com.sun.enterprise:config:jar:1.0.0 com.sun.enter
+ prise:auto-depends:jar:1.0.0 com.sun.enterprise:tiger-types-osgi:jar:
+ 1.0.0 org.glassfish:bean-validator:jar:3.0-JBoss-4.0.2 org.glassfish.
+ web:jstl-impl:jar:1.2 javax.servlet:servlet-api:jar:2.5 javax.servlet
+ .jsp:jsp-api:jar:2.2 javax.el:el-api:jar:2.2 javax.servlet.jsp.jstl:j
+ stl-api:jar:1.2 org.glassfish:javax.servlet.jsp.jstl:jar:3.0 org.glas
+ sfish.common:glassfish-api:jar:3.0 com.sun.enterprise:config-types:ja
+ r:1.0.0 com.sun.grizzly:grizzly-utils:jar:1.9.18-k org.glassfish.exte
+ rnal:management-api:jar:3.0.0-b012 org.glassfish.common:common-util:j
+ ar:3.0 org.glassfish:javax.servlet:jar:3.0
+HK2-Bundle-Name: org.glassfish.web:jstl-connector
+Class-Path: hk2.jar hk2-core.jar config.jar auto-depends.jar tiger-typ
+ es-osgi.jar bean-validator.jar jstl-impl.jar servlet-api.jar jsp-api.
+ jar el-api.jar jstl-api.jar javax.servlet.jsp.jstl.jar glassfish-api.
+ jar config-types.jar grizzly-utils.jar management-api.jar common-util
+ .jar javax.servlet.jar
+Export-Package: org.glassfish.jstl.integration;uses:="com.sun.logging,
+ org.glassfish.api.web,org.apache.taglibs.standard,org.jvnet.hk2.annot
+ ations,org.jvnet.hk2.component,com.sun.enterprise.module,com.sun.ente
+ rprise.util.net";version="3.0.0"
+Tool: Bnd-0.0.357
+Bundle-Name: JSTL implementation connector module
+Bundle-Vendor: GlassFish Community
+Bundle-Version: 3.0
+Bnd-LastModified: 1260402271317
+Bundle-ManifestVersion: 2
+Bundle-License: https://glassfish.dev.java.net/nonav/public/CDDL+GPL.h
+ tml
+Import-Package: com.sun.enterprise.module;version="1.0",com.sun.enterp
+ rise.util.net;version="3.0",com.sun.logging;version="3.0",com.sun.log
+ ging.enterprise.system.container.web,org.apache.taglibs.standard;vers
+ ion="1.2",org.glassfish.api.web;version="3.0",org.glassfish.jstl.inte
+ gration;version="3.0",org.jvnet.hk2.annotations;version="1.0",org.jvn
+ et.hk2.component;version="1.0"
+Bundle-DocURL: https://glassfish.dev.java.net
+Bundle-SymbolicName: org.glassfish.web.jstl-connector
+Originally-Created-By: 1.6.0_10 (Sun Microsystems Inc.)
+

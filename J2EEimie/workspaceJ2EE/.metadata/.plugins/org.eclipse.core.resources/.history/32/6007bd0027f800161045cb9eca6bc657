@@ -1,0 +1,2 @@
+# generated on 7 Dec 2009 09:47:58 GMT
+class=org.glassfish.jstl.integration.GlassFishTldProvider,index=org.glassfish.api.web.TldProvider:jstlTld

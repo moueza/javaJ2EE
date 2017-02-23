@@ -1,0 +1,9 @@
+<!ELEMENT produits (articles+)>
+<!ELEMENT articles (nom,num,fabricant,prix+)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT num (#PCDATA)>
+<!ELEMENT fabricant (entreprise,ville?)>
+<!ELEMENT entreprise (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT prix (#PCDATA)>
+<!ATTLIST prix client (commerce|prive) #REQUIRED>

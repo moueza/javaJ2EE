@@ -1,0 +1,6 @@
+<!ELEMENT hotels (hotel)*>
+<!ELEMENT hotel (#PCDATA)>
+<!ATTLIST hotel 
+	nom CDATA #REQUIRED
+	categorie (I|II|III|IV|V) #REQUIRED chambre_simple (oui|non) #IMPLIED chambre_double (oui|non) "oui" 
+>

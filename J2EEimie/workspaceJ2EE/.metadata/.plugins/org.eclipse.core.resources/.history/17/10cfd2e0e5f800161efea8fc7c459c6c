@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ATTLIST telephone
+	type (professionnel | personnel | portable) #IMPLIED
+>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT abonne (nom, prenom, telephone)>
+<!ELEMENT annuaire (abonne)*>

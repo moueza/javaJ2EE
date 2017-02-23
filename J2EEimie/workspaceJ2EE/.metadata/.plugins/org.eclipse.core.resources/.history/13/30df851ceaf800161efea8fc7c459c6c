@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ATTLIST telephone
+	type (professionnel | personnel | portable) #IMPLIED
+>
+
+
+<!ELEMENT bibliotheque (ouvrage)*>
+
+<!ELEMENT ouvrage (type, nom, serie, edition, auteur, IBN, location)>
+<!ELEMENT location (meuble, etagère)>
+
+
+
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT IBN (#PCDATA)>
+<!ELEMENT meuble (#PCDATA)>
+<!ELEMENT etagère (#PCDATA)>
+
+
+<!ELEMENT serie (#PCDATA)>
+
+<!ELEMENT edition (#PCDATA)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT position (#PCDATA)>

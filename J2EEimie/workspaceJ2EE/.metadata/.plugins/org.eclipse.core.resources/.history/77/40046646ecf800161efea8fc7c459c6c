@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE texte SYSTEM "bibliothequeFUSION.dtd">
+<bibliotheque>
+	<ouvrage>
+		<nom>Elric le necromantien</nom>
+		<serie>Elric</serie>
+		<edition>folio</edition>
+		<auteur>Mickael Moorcock</auteur>
+		<location>
+			<meuble>1</meuble>
+			<etagere>1</etagere>
+		</location>
+	</ouvrage>
+	
+	<ouvrage>
+		<nom>La communaute de l'anneau</nom>
+		<serie>Le seigneur des angeaux</serie>
+		<edition>j'ai lu</edition>
+		<auteur>J.R.R Tolkien</auteur>
+		<location>
+			<meuble>1</meuble>
+			<etagere>1</etagere>
+		</location>
+	</ouvrage>
+	
+	<ouvrage>
+		<nom>Dune</nom>
+		<serie>Dune</serie>
+		<edition>folio jeunesse</edition>
+		<auteur>Franck Herbert</auteur>
+		<location>
+			<meuble>1</meuble>
+			<etagere>1</etagere>
+		</location>
+	</ouvrage>
+	
+	<ouvrage>
+		<nom>Etoile garde a vous</nom>
+		<serie>null</serie>
+		<edition>Folio sf</edition>
+		<auteur>Heinlein</auteur>
+		<location>
+			<meuble>1</meuble>
+			<etagere>1</etagere>
+		</location>
+	</ouvrage>
+	
+	<ouvrage>
+		<nom>Des milliards de tapis de cheuveux</nom>
+		<serie>null</serie>
+		<edition>Livre de poche</edition>
+		<auteur></auteur>
+		<position>T'as regarde a cote du machin?</position>
+		<location>
+			<meuble>1</meuble>
+			<etagere>1</etagere>
+		</location>
+	</ouvrage>
+	
+	<ouvrage>
+		<nom>Dracula</nom>
+		<serie>null</serie>
+		<edition>j'ai lu</edition>
+		<auteur>unknow</auteur>
+		<location>
+			<meuble>1</meuble>
+			<etagere>1</etagere>
+		</location>
+	</ouvrage>
+	
+	<ouvrage>
+		<nom>Le cid</nom>
+		<serie>null</serie>
+		<edition>Livre de poche</edition>
+		<auteur>Corneil</auteur>
+		<location>
+			<meuble>1</meuble>
+			<etagere>1</etagere>
+		</location>
+	</ouvrage>
+</bibliotheque>

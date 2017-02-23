@@ -1,0 +1,32 @@
+package services;
+
+import java.util.ArrayList;
+import java.util.List;
+import modele.Message;
+
+public class ChatServices {
+	private static ChatServices instance;
+	/**TODO mettre dans classe Entite */
+	List<Message> listOfMessages = new ArrayList<Message>();
+
+	public static ChatServices getInstance() {
+		if (instance == null)
+			return new ChatServices();
+		return instance;
+	}
+
+	public void insertMessage(Message m) {
+		this.listOfMessages.add(m);
+	}
+	
+	
+	public List<Message> loadMessages() {
+		return this.listOfMessages;
+	}
+	
+	public void loadMessagesString() {
+		this.listOfMessages.add(m);
+	}
+	
+
+}

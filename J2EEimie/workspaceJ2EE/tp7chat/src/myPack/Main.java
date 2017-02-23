@@ -1,0 +1,18 @@
+package myPack;
+
+import modele.Message;
+import services.ChatServices;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//testMetier
+		Message msg = new Message("MOUEZA","c est mon message");
+		ChatServices.getInstance().insertMessage(msg);
+		System.out.println(ChatServices.getInstance().loadMessagesString());
+	
+		//test Presentation
+		
+	}
+
+}

@@ -1,0 +1,70 @@
+package myPack;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+public class Main {
+	String nom;
+
+	public String getNom() {
+		return nom;
+	}
+
+	
+	public Main(){
+		
+	}
+	
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String toString() {
+		return this.getNom();
+	}
+
+	public static void main(String[] args) {
+		Main main = new Main();
+		Classe classe = new Classe();
+
+		// https://sites.google.com/site/gson/gson-user-guide#TOC-Primitives-Examples
+		// (Serialization)
+		Gson gson = new Gson();
+
+		gson.toJson(1); // ==> prints 1
+		System.out.println(gson.toJson("abcd")); // ==> prints "abcd"
+		System.out.println(gson.toJson(new Long(10)));// ==> prints 10
+		int[] values = { 1 };
+		System.out.println(gson.toJson(values)); // ==> prints [1]
+		System.out.println(".....");
+		gson = new Gson();
+		String json = gson.toJson(main);
+		System.out.println(json);
+
+		try (Writer writer = new FileWriter("output.json")) {
+			Gson gson2 = new GsonBuilder().create();
+			gson.toJson(main, writer);
+			
+			
+			
+			BagOfPrimitives obj = new BagOfPrimitives();
+			gson = new Gson();
+			String json2 = gson.toJson(obj);
+			System.out.println(json2);
+			
+			
+			
+			Gson gson3 = new GsonBuilder().create();
+			System.out.println("gson3"+gson3);
+			gson3.toJson(classe, writer);
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

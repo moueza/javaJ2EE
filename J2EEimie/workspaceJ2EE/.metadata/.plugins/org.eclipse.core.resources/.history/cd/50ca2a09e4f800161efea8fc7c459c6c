@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<annuaire>
+<abonne>
+		<nom>Martin </nom>
+		<prenom>Herve</prenom>
+		<telephone type="personnel">02 41 22 1122</telephone>
+</abonne>
+<abonne>
+		<nom>Durand</nom>
+		<prenom>Yves</prenom>
+		<telephone type="professionnel">02 58 58 58 57</telephone>
+	</abonne>
+	<abonne>
+		<nom>Durand</nom>
+		<prenom>Yves</prenom>
+		<telephone type="professionnel">02 58 58 58 57</telephone>
+	</abonne>
+
+</annuaire>

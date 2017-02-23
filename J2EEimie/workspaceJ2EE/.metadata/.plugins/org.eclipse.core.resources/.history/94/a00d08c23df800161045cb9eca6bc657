@@ -1,0 +1,30 @@
+package metier;
+
+import beans.Chat;
+import beans.Utilisateur;
+import org.apache.log4j.Logger;
+
+public class LoginService implements ILoginService {
+	private static LoginService instance;
+
+	private LoginService() {
+
+	}
+
+	public static LoginService getInstance() {
+		if (instance == null) {
+			instance = new LoginService();
+		}
+		return instance;
+	}
+
+	@Override
+	public boolean isGoodLogin(Utilisateur u) {
+		return Chat.getInstance().getLesUtilisateurs().containsValue(u);
+	}
+
+	public void logUser(Utilisateur user) {
+
+	}
+
+}

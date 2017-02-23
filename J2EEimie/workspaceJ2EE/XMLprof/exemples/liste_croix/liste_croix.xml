@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE texte SYSTEM "liste_croix.dtd">
+<texte> Voilà ce que donne une croix simple &croix_simple; et une croix double &croix_double;. 
+</texte> 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE produits SYSTEM "produits.dtd">
+<produits>
+	<articles>
+		<nom>Poupée</nom>
+		<num>32945-38</num>
+		<fabricant>
+			<entreprise>Jeubois</entreprise>
+			<ville>Strasbourg</ville>
+		</fabricant>
+		<prix client="prive">60</prix>
+		<prix client="commerce">40</prix>
+	</articles>
+	<articles>
+		<nom>Polichinelle en bois</nom>
+		<num>32945-41</num>
+		<fabricant>
+			<entreprise>Jeubois</entreprise>
+			<ville>Strasbourg</ville>
+		</fabricant>
+		<prix client="prive">18</prix>
+		<prix client="commerce">12</prix>
+	</articles>
+	<articles>
+		<nom>Train en bois de base</nom>
+		<num>32945-41</num>
+		<fabricant>
+			<entreprise>Natura SA</entreprise>
+		</fabricant>
+		<prix client="prive">80</prix>
+		<prix client="commerce">60</prix>
+	</articles>
+</produits>

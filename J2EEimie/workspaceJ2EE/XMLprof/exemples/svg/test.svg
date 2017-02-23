@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="600px" height="200px" xmlns="http://www.w3.org/2000/svg"> 
+  <text x="5" y="20" style="font-size:24">SVG Test: Path using horizontal &amp; vertical lines</text> 
+  <g style="fill:none; stroke:blue"> 
+    <path d="M 50,50  h 50 v 50 h -50 z"/> 
+    <path d="M 110,50 h 50 v 50 h -50 v -50"/> 
+    <path d="m 50,110 h 50 v 50 h -50 z" /> 
+  </g> 
+</svg> 
